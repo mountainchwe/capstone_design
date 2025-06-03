@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+
+html, body, #root, .app {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+
+.dark-mode {
+  background-color: #1a202c; 
+  color: #fff;
+}
+
+/* Rounded Corners */
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+/* Subtle Shadows */
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}

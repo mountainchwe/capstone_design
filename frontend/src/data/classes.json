@@ -1,0 +1,139 @@
+{
+  "classes": [
+    {
+      "id": "1",
+      "name": "Operating System",
+      "students": [
+        {
+          "id": 1,
+          "name": "Alice Johnson",
+          "studentId": "1001",
+          "department": "Computer Science",
+          "email": "alice.johnson@example.com",
+          "attendanceStatus": "present"
+        },
+        {
+          "id": 2,
+          "name": "Bob Williams",
+          "studentId": "1002",
+          "department": "Electrical Engineering",
+          "email": "bob.williams@example.com"
+        },
+        {
+          "id": 3,
+          "name": "Charlie Brown",
+          "studentId": "1003",
+          "department": "Mechanical Engineering",
+          "email": "charlie.brown@example.com"
+        },
+        {
+          "id": 4,
+          "name": "Diana Davis",
+          "studentId": "1004",
+          "department": "Civil Engineering",
+          "email": "diana.davis@example.com"
+        },
+        {
+          "id": 5,
+          "name": "Ethan Miller",
+          "studentId": "1005",
+          "department": "Computer Engineering",
+          "email": "ethan.miller@example.com"
+        },
+        {
+          "id": 6,
+          "name": "Mohamad Aliff Iskandar",
+          "studentId": "1006",
+          "department": "Computer Science",
+          "email": "aliff.iskandr02@khu.ac.kr"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Compiler",
+      "students": [
+        {
+          "id": 7,
+          "name": "Sophia Garcia",
+          "studentId": "2001",
+          "department": "Computer Science",
+          "email": "sophia.garcia@example.com"
+        },
+        {
+          "id": 8,
+          "name": "Liam Rodriguez",
+          "studentId": "2002",
+          "department": "Software Engineering",
+          "email": "liam.rodriguez@example.com"
+        },
+        {
+          "id": 9,
+          "name": "Olivia Wilson",
+          "studentId": "2003",
+          "department": "Information Technology",
+          "email": "olivia.wilson@example.com"
+        },
+        {
+          "id": 10,
+          "name": "Noah Martinez",
+          "studentId": "2004",
+          "department": "Computer Engineering",
+          "email": "noah.martinez@example.com"
+        },
+        {
+          "id": 11,
+          "name": "Annas Syahimi",
+          "studentId": "2005",
+          "department": "Computer Engineering",
+          "email": "annas.syahimi@khu.ac.kr"
+        },
+        {
+          "id": 12,
+          "name": "Umaira Yusra",
+          "studentId": "2006",
+          "department": "Computer Engineering",
+          "email": "umaira.yusra@khu.ac.kr"
+        }
+      ]
+    }
+  ],
+  "students": [
+    {
+      "id": "9b79",
+      "name": "student1",
+      "studentId": "2002100300",
+      "department": "Computer Engineering",
+      "email": "student1@khu.ac.kr",
+      "password": "password",
+      "classId": "1"
+    },
+    {
+      "id": "cc14",
+      "name": "Mohamad Aliff Iskandar",
+      "studentId": "2022100301",
+      "department": "Computer Engineering",
+      "email": "aliff.iskandr02@khu.ac.kr",
+      "password": "password",
+      "classId": "1"
+    },
+    {
+      "id": "630e",
+      "name": "Annas Syahimi",
+      "studentId": "2022100303",
+      "department": "Computer Engineering",
+      "email": "annas.syahimi@khu.ac.kr",
+      "password": "password",
+      "classId": "2"
+    },
+    {
+      "id": "9844",
+      "name": "Umaira Yusra",
+      "studentId": "2022100300",
+      "department": "Computer Engineering",
+      "email": "umaira.yusra@khu.ac.kr",
+      "password": "password",
+      "classId": "1"
+    }
+  ]
+}
