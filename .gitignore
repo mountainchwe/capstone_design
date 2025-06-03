@@ -1,0 +1,43 @@
+# Node.js dependencies
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.vite/
+
+# Build outputs
+*.log
+*.tsbuildinfo
+
+# dotenv config
+*.env
+*.env.*.local
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Python __pycache__ and artifacts
+**/__pycache__/
+*.py[cod]
+*.pyo
+
+# Python virtual environment
+venv/
+env/
+
+# Django + SQLite DB
+/backend/db.sqlite3
+*.sqlite3
+
+# ChromaDB vector store
+/backend/chroma_db/
+chroma_db/
+
+# Frontend cache / state files
+frontend/.eslintcache
+frontend/.parcel-cache
+
+# Misc
+*.swp

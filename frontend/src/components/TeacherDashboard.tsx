@@ -125,11 +125,50 @@ const TeacherDashboard: React.FC<TeacherDashboardProps> = ({ onLogout }) => {
       {/* Main Area */}
       <div className="flex-1 p-6 bg-slate-100 overflow-auto">
         <div className="flex justify-between mb-6">
-          <button onClick={() => alert('Start face recognition attendance')}
-            className="bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded-md"
-            >
-            Start Face Recognition
-          </button>
+          <button
+  onClick={async () => {
+    if (!selectedClass) return;
+
+    const week = Math.ceil((selectedTab + 1) / 2);
+    const session = (selectedTab % 2) + 1;
+
+    try {
+      // 1. Start face recognition
+      const response = await fetch("http://192.168.35.82:8001/start-attendance", {
+        method: "POST",
+      });
+
+      const data = await response.json();
+
+      if (!data.attendances || data.attendances.length === 0) {
+        alert("No students recognized.");
+        return;
+      }
+
+      // 2. Save recognized data to Django backend
+      await fetch("/api/attendances/save/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          class_id: selectedClass.id,
+          week,
+          session,
+          records: data.attendances, // each is {student_id, timestamp}
+        }),
+      });
+
+      alert("Attendance saved!");
+    } catch (err) {
+      console.error("Error during attendance:", err);
+      alert("Failed to complete attendance.");
+    }
+  }}
+  className="bg-green-500 hover:bg-green-700 text-white py-2 px-4 rounded-md"
+>
+  Start Face Recognition
+</button>
 
           <button
             onClick={handleLogout}
